@@ -1,6 +1,6 @@
 /**
  * Angular Carousel - Mobile friendly touch carousel for AngularJS
- * @version v0.3.9 - 2015-02-01
+ * @version v0.3.10 - 2015-02-01
  * @link http://revolunet.github.com/angular-carousel
  * @author Julien Bouquillon <julien@revolunet.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -451,8 +451,8 @@ angular.module('angular-carousel').run(['$templateCache', function($templateCach
                             // dont use a directive for this
                             var nextSlideIndexCompareValue = isRepeatBased ? repeatCollection.replace('::', '') + '.length - 1' : currentSlides.length - 1;
                             var tpl = '<div class="rn-carousel-controls">\n' +
-                                '  <span class="rn-carousel-control rn-carousel-control-prev" ng-click="prevSlide()" ng-if="carouselIndex > 0"><i class="r24syv-chevron-left"></i></span>\n' +
-                                '  <span class="rn-carousel-control rn-carousel-control-next" ng-click="nextSlide()" ng-if="carouselIndex < ' + nextSlideIndexCompareValue + '"><i class="r24syv-chevron-right"></i></span>\n' +
+                                '  <span class="rn-carousel-control rn-carousel-control-prev btn icon" ng-click="prevSlide()" ng-if="carouselIndex > 0"><i class="r24syv-chevron-left"></i></span>\n' +
+                                '  <span class="rn-carousel-control rn-carousel-control-next btn icon" ng-click="nextSlide()" ng-if="carouselIndex < ' + nextSlideIndexCompareValue + '"><i class="r24syv-chevron-right"></i></span>\n' +
                                 '</div>';
                             iElement.append($compile(angular.element(tpl))(scope));
                         }
